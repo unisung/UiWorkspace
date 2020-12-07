@@ -1,0 +1,6 @@
+@charset "EUC-KR";
+<!--선택자 {속성:값;} -->
+ h1{
+          color:white;
+          background:black;
+}
