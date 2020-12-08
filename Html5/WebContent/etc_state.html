@@ -1,0 +1,27 @@
+<!DOCTYPE html><html>
+<head>
+<meta charset="UTF-8">
+<title>상태 선택자 </title>
+ <style>
+   /* :enabled, :disabled - 가상 상태 선택자 */
+    input:enabled{background-color: white;}
+    input:disabled {background-color: green;}
+    input:focus{background-color: orange;}/*마우스 커서가 적용,혹은 글자입력 중 */
+    /* 요소 + 인접요소 <- checked요소의 바로옆 요소인 라벨 의 속성 변경 */
+    input:checked+label{background-color: red;}
+ </style>
+</head>
+<body>
+
+    <h2>사용가능</h2>
+    <input>
+    <h2>사용불가능</h2>
+    <input disabled="disabled">
+    <hr>
+    <input type="checkbox"><label>사과</label>
+    <input type="checkbox"><label>배</label>
+    <input type="checkbox"><label>바나나</label><br>
+    <input type="radio"><label>남성</label>
+    <input type="radio"><label>여성</label>
+</body>
+</html>

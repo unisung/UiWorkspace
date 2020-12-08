@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>div태그로 구성</title>
+<style>
+  /*전체 div 선택자모두에게 공통 적용되는 스타일 */ 
+  div{border: 1px solid black; width: 200px; height: 100px;}
+  
+  /* div태그중에 id가 header인 태그에 적용되는 스타일 */
+  div#header{width: 600px;}
+  /* div태그중에 id가 nav인 태그에 적용되는 스타일 */
+  div#nav{width: 600px;}
+  /* div태그중에 id가 footer인 태그에 적용되는 스타일 */
+  div#footer{width: 600px;}
+  /* div태그중에 id가 aside1 인 태그에 적용되는 스타일 */
+  div#aside1{float: left;}
+  /* div태그중에 id가 section인 태그에 적용되는 스타일 */
+  div#section{float: left; width: 200px;}
+  /* div바로 아래 div태그가 있는 요소에 적용되는 스타일 */
+  div>div{border: 1px solid blue; width: 50px; height: 100px;float:left;}
+  div#aside2{float: left;}
+  /* class가 clear인 요소에 적용 되는 스타일 */
+  .clear{clear: both; height: 0;}
+</style>
+</head>
+<body>
+<!-- div태그는 영역을 구분하는 태그 이지만 화면에 보이지는 않음,
+     배치도 입력순서에 따라 위에서 아래로 배치됨 -->
+  <div id="header">header</div>
+  <div id="nav">네비</div>
+  <div id="aside1">왼쪽 aside</div>
+  <div id="section">
+    <div id="article1">내용1</div>
+    <div id="article2">내용2</div>
+    <div id="article3">내용3</div>
+  </div>/* div태그중에 id가 nav인 태그에 적용되는 스타일 *//* div태그중에 id가 nav인 태그에 적용되는 스타일 */
+  <div id="aside2">오른쪽 aside</div>
+  <div class="clear"></div>
+  <div id="footer">footer</div>
+</body>
+</html>

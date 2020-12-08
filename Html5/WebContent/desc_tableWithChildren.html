@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 태그 선택시 자손 선택자 주의</title>
+<style>
+  /* table태그 바로 아래의 tr이 아니고, table내의 tr을 선택 */
+  table  tr > th{color:red;}
+</style>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th>이름</th>
+      <th>지역</th>
+    </tr>
+    <tr>
+    <td>윤인성</td>
+    <td>서울특별시 강서구 내발산동</td>
+    </tr>
+  </table>
+</body>
+</html>

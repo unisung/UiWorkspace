@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>semantic태그로 구성</title>
+<style>
+  /* 선택자 */
+  header{border: 1px solid black; width: 600px; height:100px;}
+  nav{border: 1px solid black; width: 600px; height:100px;}
+  aside#left{border: 1px solid black; width:200px; height:200px;
+             float:left;}
+  section{border: 1px solid black; width:200px; height:200px;
+          float:left;}
+  aside#right{border: 1px solid black; width:200px; height:200px;
+             float:left;}
+  footer{border: 1px solid red;width:600px; height:100px;}
+  /* 위에서 지정한 float 속성을 제거하는 역할 clear속성 */
+  .clear{clear:both;}        
+</style>
+</head>
+<body>
+<!-- div태그는 영역을 구분하는 태그 이지만 화면에 보이지는 않음,
+     배치도 입력순서에 따라 위에서 아래로 배치됨 -->
+  <header>header 메인 페이지 제목</header>
+  <nav>네비 메뉴용 태그 </nav>
+  <aside id="left">왼쪽 aside 본문과 다른 내용 </aside>
+  <section>
+    <article>내용1 콘텐츠1</article>
+    <article>내용2 콘텐츠2</article>
+    <article>내용3 콘텐츠3</article>
+  </section>
+  <aside id="right">오른쪽 aside 본문과 다른 내용</aside>
+  <div class="clear"></div>
+  <footer>footer 꼬리말(저자나 저작권 정보)</footer>
+</body>
+</html>

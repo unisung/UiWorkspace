@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<title>id 선택자</title>
+<style>
+  /* 아이디 선택자 #아이디명 */
+  #header{width: 800px;margin: 0 auto; background-color: red;}
+  /* overflow: 내부 콘텐츠가 범위를 벗어났을 때 브라우저에 보여주기 옵션 */
+  #wrap{width:800px; margin: 0 auto; overflow: hidden;
+             background-color: orange;}
+   /* wrap영역안에서 aside와 content를 가로로 배치 함 - float:left사용 */
+  #aside{width: 200px; float:left; background-color: blue;}
+  #content{width: 600px; float: left; background: green;}
+</style>
+</head>
+<body>
+<h1>아이디 선택자 #id명 </h1>
+
+  <div id="header">
+    <h1>#header 태그</h1>
+  </div>
+  <div id="wrap">
+	     <div id="aside">
+	       <h1>#aside 태그</h1>
+	     </div>
+
+		 <div id="content">
+		    <h1>#conent 태그 </h1>
+		 </div>
+  </div>  
+</body>
+</html>
